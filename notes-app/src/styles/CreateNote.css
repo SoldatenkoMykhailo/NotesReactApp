@@ -1,0 +1,65 @@
+.create-text-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -37.5%);
+}
+
+.create-text-area {
+  box-sizing: border-box;
+  width: 650px;
+  height: 500px;
+  border: none;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(217, 217, 217);
+  padding: 25px;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.create-note-btn {
+  background-color: rgb(217, 217, 217);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 29.5%;
+  left: 102%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+}
+
+.create-graphic-note-btn {
+  background-color: rgb(217, 217, 217);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 42.2%;
+  left: 33%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.2rem;
+}
+
+.create-note-btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.create-graphic-note-btn:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.create-note-title {
+  width: 300px;
+  height: 40px;
+  border: solid 1px black;
+  border-radius: 15px;
+  padding-left: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.create-note-form {
+  margin-top: 110px;
+}
