@@ -1,0 +1,58 @@
+hr {
+  background-color: black;
+  width: 90%;
+  height: 0.5px;
+  border: none;
+}
+
+.entry-div {
+  box-sizing: border-box;
+  background-color: rgb(255, 247, 177);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.entry-div-internal {
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 428px;
+  height: 700px;
+  background-color: rgb(245, 231, 111);
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+}
+
+.entry-input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 25px;
+  padding-left: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign-btns {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  border: solid 1.5px black;
+  background-color: rgb(245, 231, 111);
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.sign-btns:hover {
+  background-color: black;
+  color: rgb(245, 231, 111);
+}
