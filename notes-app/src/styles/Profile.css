@@ -1,0 +1,26 @@
+.profile-div {
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: rgb(217, 217, 217);
+  position: fixed;
+  top: 10.5%;
+  right: 2%;
+  box-shadow: 2px 4px 9.9px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.logout-btn {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: rgb(190, 0, 0);
+  background-color: rgb(217, 217, 217);
+  border: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
