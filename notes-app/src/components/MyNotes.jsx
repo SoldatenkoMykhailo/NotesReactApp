@@ -48,6 +48,13 @@ export default function MyNotes() {
     setNotes(originNotes);
   }
 
+  function updateNote(id, isGraphic) {
+    const editPage = isGraphic
+      ? `/update-graphic-note/${id}`
+      : `/update-note/${id}`;
+    window.location.href = editPage;
+  }
+
   async function deleteNote(id) {
     const token = localStorage.getItem("token");
 
@@ -69,7 +76,7 @@ export default function MyNotes() {
 
   return (
     <>
-      <div className="top-side-bar">
+      <div>
         <TopBar />
         <SideBar />
       </div>
@@ -85,6 +92,7 @@ export default function MyNotes() {
           ❌
         </button>
       </div>
+
       <div className="note-divs">
         {notes.length !== 0 ? (
           notes.map((item) => (
@@ -127,7 +135,12 @@ export default function MyNotes() {
                 {item.updatedAt && (
                   <span>{new Date(item.updatedAt).toLocaleString()}</span>
                 )}
-                <button className="edit-note-btn">✏️</button>
+                <button
+                  onClick={() => updateNote(item._id, !!item.image)}
+                  className="edit-note-btn"
+                >
+                  ✏️
+                </button>
                 <button
                   onClick={() => deleteNote(item._id)}
                   className="delete-note-btn"
@@ -138,7 +151,14 @@ export default function MyNotes() {
             </div>
           ))
         ) : (
-          <h1>Error</h1>
+          <p
+            style={{
+              fontFamily: 'Georgia, "Times New Roman", Times, serif',
+              fontSize: "20px",
+            }}
+          >
+            There are no notes. Add your first one
+          </p>
         )}
       </div>
     </>

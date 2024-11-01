@@ -1,6 +1,6 @@
 .create-text-div {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-30%, -37.5%);
 }
@@ -15,6 +15,7 @@
   padding: 25px;
   font-size: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 25px;
 }
 
 .create-note-btn {
@@ -22,7 +23,7 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 29.5%;
+  top: 23%;
   left: 102%;
   border: none;
   border-radius: 10px;
@@ -35,7 +36,7 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 42.2%;
+  top: 42.1%;
   left: 33%;
   border: none;
   border-radius: 10px;
@@ -61,5 +62,5 @@
 }
 
 .create-note-form {
-  margin-top: 110px;
+  margin-top: 50px;
 }

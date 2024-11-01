@@ -64,6 +64,7 @@ export default function Login() {
           </form>
           <Footer a_text="Create an account" a_href="/register" />
         </div>
+        {error && <span className="error-message">{error}</span>}
       </div>
     </>
   );

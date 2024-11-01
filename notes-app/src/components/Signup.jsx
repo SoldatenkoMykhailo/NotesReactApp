@@ -79,6 +79,7 @@ export default function Signup() {
 
           <Footer a_text="Back to Sign In" a_href="/" />
         </div>
+        {error && <span className="error-message">{error}</span>}
       </div>
     </>
   );

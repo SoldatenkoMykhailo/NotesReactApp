@@ -72,7 +72,7 @@ export default function CreateGraphicNote() {
 
   return (
     <>
-      <div className="top-side-bar">
+      <div>
         <TopBar />
         <SideBar />
       </div>

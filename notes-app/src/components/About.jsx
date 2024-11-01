@@ -7,7 +7,7 @@ import about from "../about-app";
 export default function About() {
   return (
     <>
-      <div className="top-side-bar">
+      <div>
         <TopBar />
         <SideBar />
       </div>

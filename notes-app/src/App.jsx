@@ -6,6 +6,8 @@ import MyNotes from "./components/MyNotes";
 import CreateNote from "./components/CreateNote";
 import CreateGraphicNote from "./components/CreateGraphicNote";
 import About from "./components/About";
+import UpdateNote from "./components/UpdateNote";
+import UpdateGraphicNote from "./components/UpdateGraphicNote";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +21,11 @@ function App() {
           <Route path="/create-note" element={<CreateNote />} />
           <Route path="/create-graphic-note" element={<CreateGraphicNote />} />
           <Route path="/about" element={<About />} />
+          <Route path="/update-note/:noteID" element={<UpdateNote />} />
+          <Route
+            path="/update-graphic-note/:noteID"
+            element={<UpdateGraphicNote />}
+          />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

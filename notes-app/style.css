@@ -56,3 +56,13 @@ hr {
   background-color: black;
   color: rgb(245, 231, 111);
 }
+
+.error-message {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 15px;
+  position: absolute;
+  top: 85%;
+  left: 44.6%;
+}

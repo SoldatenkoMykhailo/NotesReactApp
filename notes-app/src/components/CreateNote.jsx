@@ -38,48 +38,48 @@ export default function CreateNote() {
 
   return (
     <>
-      <div className="top-side-bar">
+      <div>
         <TopBar />
         <SideBar />
-        <button
-          className="create-graphic-note-btn"
-          onClick={() => {
-            window.location.href = "/create-graphic-note";
-          }}
-        >
-          🖌️
-        </button>
-        <div className="create-text-div">
-          <form onSubmit={handleSubmit} className="create-note-form">
-            <input
-              type="text"
-              className="create-note-title"
-              placeholder="Title"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
+      </div>
+      <button
+        className="create-graphic-note-btn"
+        onClick={() => {
+          window.location.href = "/create-graphic-note";
+        }}
+      >
+        🖌️
+      </button>
+      <div className="create-text-div">
+        <form onSubmit={handleSubmit} className="create-note-form">
+          <input
+            type="text"
+            className="create-note-title"
+            placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
 
-            <p
-              style={{
-                fontSize: "18px",
-                fontFamily: 'Georgia, "Times New Roman", Times, serif',
-              }}
-            >
-              Enter the text:
-            </p>
-            <textarea
-              className="create-text-area"
-              name="create-note-text-area"
-              id="create-note-text-area"
-              placeholder="Type..."
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
-            ></textarea>
-            <button className="create-note-btn" type="submit">
-              ✔️
-            </button>
-          </form>
-        </div>
+          <p
+            style={{
+              fontSize: "18px",
+              fontFamily: 'Georgia, "Times New Roman", Times, serif',
+            }}
+          >
+            Enter the text:
+          </p>
+          <textarea
+            className="create-text-area"
+            name="create-note-text-area"
+            id="create-note-text-area"
+            placeholder="Type..."
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+          <button className="create-note-btn" type="submit">
+            ✔️
+          </button>
+        </form>
       </div>
     </>
   );

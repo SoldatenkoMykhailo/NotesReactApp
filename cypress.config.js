@@ -8,4 +8,11 @@ export default defineConfig({
       return config;
     },
   },
+
+  component: {
+    devServer: {
+      framework: "react",
+      bundler: "vite",
+    },
+  },
 });

@@ -1,0 +1,14 @@
+[
+    {
+      "_id": "note1",
+      "title": "First Note",
+      "content": "This is the content of the first note.",
+      "updatedAt": "2024-10-28T10:00:00Z"
+    },
+    {
+      "_id": "note2",
+      "title": "Sample Note Title",
+      "updatedAt": "2024-10-29T15:30:00Z",
+      "image": "https://example.com/image.jpg"
+    }
+  ]
